@@ -19,6 +19,11 @@
 
 // The name of this function should match:
 // void Add${NameOfDirectory}Scripts()
+void Add_ptr_template();
+void AddSC_ptr_template_commandscript();
+
 void AddCustomScripts()
 {
+    Add_ptr_template();
+    AddSC_ptr_template_commandscript();
 }

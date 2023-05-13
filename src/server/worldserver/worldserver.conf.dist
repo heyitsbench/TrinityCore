@@ -38,6 +38,7 @@
 #    PACKET SPOOF PROTECTION SETTINGS
 #    MISC ANTI-CHEAT SETTINGS
 #    METRIC SETTINGS
+#    PTR TEMPLATE SCRIPT
 #
 ###################################################################################################
 
@@ -4147,3 +4148,120 @@ Metric.OverallStatusInterval = 1
 
 #
 ###################################################################################################
+
+###################################################################################################
+# PTR TEMPLATE SCRIPT
+#
+# These settings control the behavior of the PTR template script
+#
+#    AnnounceEnable
+#        Description: Enable the module announcing its presence.
+#        Default:     true  - (Enabled)
+#                     false - (Disabled)
+
+AnnounceEnable = true
+
+#
+#    TemplateEnable
+#        Description: Enable the application of templates.
+#        Default:     true  - (Enabled)
+#                     false - (Disabled)
+
+TemplateEnable = true
+
+#
+#    LevelEnable
+#        Description: Enable templates to be applied at any level.
+#        Default:     false - (Disabled, only at StartPlayerLevel)
+#                     true  - (Enabled, any level)
+
+LevelEnable = false
+
+#
+#   TemplateAchievements
+#   TemplateBagGear
+#   TemplateDK
+#   TemplateEquipGear
+#   TemplateHomebind
+#   TemplateHotbar       # false
+#   TemplateLevel
+#   TemplateQuests       # false
+#   TemplateReputation
+#   TemplateResources
+#   TemplateSkills
+#   TemplateSpells
+#   TemplateTaximask
+#   TemplateTeleport
+#       Description: Enable various aspects of template sets to be applied.
+#       Defaults:    true  - (Enabled)
+#                    false - (Disabled)
+
+TemplateAchievements = true
+TemplateBagGear      = true
+TemplateDK           = true
+TemplateEquipGear    = true
+TemplateHomebind     = true
+TemplateHotbar       = false # Default: false.
+TemplateLevel        = true
+TemplateQuests       = false # Default: false.
+TemplateReputation   = true
+TemplateResources    = true
+TemplateSkills       = true
+TemplateSpells       = true
+TemplateTaximask     = true
+TemplateTeleport     = true
+
+#
+#    EnableApplySecurity
+#        Description: Set the minimum account security level to apply enabled templates.
+#        Default:     0  - (Enabled, Everyone)
+#                     1  - (Enabled, Mods/GMs/Admins)
+#                     2  - (Enabled, GMs/Admins)
+#                     3  - (Enabled, Admins)
+#                     4  - (Disabled)
+
+EnableApplySecurity = 0
+
+#
+#    DisableApplySecurity
+#        Description: Set the minimum account security level to apply disabled templates.
+#        Default:     3  - (Enabled, Admins)
+#                     0  - (Enabled, Everyone)
+#                     1  - (Enabled, Mods/GMs/Admins)
+#                     2  - (Enabled, GMs/Admins)
+#                     4  - (Disabled)
+
+DisableApplySecurity = 3
+
+#
+#    EnableListSecurity
+#        Description: Set the minimum account security level to list enabled templates.
+#        Default:     0  - (Enabled, Everyone)
+#                     1  - (Enabled, Mods/GMs/Admins)
+#                     2  - (Enabled, GMs/Admins)
+#                     3  - (Enabled, Admins)
+#                     4  - (Disabled)
+
+EnableListSecurity = 0
+
+#
+#    DisableListSecurity
+#        Description: Set the minimum account security level to list disabled templates.
+#        Default:     2  - (Enabled, GMs/Admins)
+#                     0  - (Enabled, Everyone)
+#                     1  - (Enabled, Mods/GMs/Admins)
+#                     3  - (Enabled, Admins)
+#                     4  - (Disabled)
+
+DisableListSecurity = 2
+
+#
+#    StatusSecurityText
+#        Description: Set the minimum account security level to show "Enabled/Disabled" text when listing templates.
+#        Default:     2  - (Enabled, GMs/Admins)
+#                     0  - (Enabled, Everyone)
+#                     1  - (Enabled, Mods/GMs/Admins)
+#                     3  - (Enabled, Admins)
+#                     4  - (Disabled)
+
+StatusSecurityText = 2
