@@ -61,7 +61,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateDK", true))
                     {
                         AddTemplateDeathKnight(player);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying death knight case for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -69,7 +69,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateLevel", true))
                     {
                         AddTemplateLevel(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying level for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -77,7 +77,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateTaximask", true))
                     {
                         AddTemplateTaxi(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying taximask for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -85,7 +85,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateHomebind", true))
                     {
                         AddTemplateHomebind(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying homebind for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -93,7 +93,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateAchievements", true))
                     {
                         AddTemplateAchievements(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying achievements for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -101,7 +101,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateQuests", true))
                     {
                         AddTemplateQuests(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying quests for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -109,7 +109,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateReputation", true))
                     {
                         AddTemplateReputation(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying reputations for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -117,7 +117,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateSkills", true))
                     {
                         AddTemplateSkills(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying skills for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -125,7 +125,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateEquipGear", true))
                     {
                         AddTemplateWornGear(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying equipment for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -133,7 +133,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateBagGear", true))
                     {
                         AddTemplateBagGear(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying inventory items for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -141,7 +141,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateSpells", true))
                     {
                         AddTemplateSpells(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying spells for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -149,7 +149,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateHotbar", true))
                     {
                         AddTemplateHotbar(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying hotbar spells for template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -157,7 +157,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateTeleport", true))
                     {
                         AddTemplatePosition(player, index);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished teleporting template character %s.", player->GetGUID().ToString());
                     }
                     break;
@@ -165,7 +165,7 @@ public:
                     if (sConfigMgr->GetBoolDefault("TemplateResources", true))
                     {
                         AddTemplateResources(player);
-                        player->SaveToDB(false, false);
+                        player->SaveToDB(false);
                         TC_LOG_DEBUG("scripts", "Finished applying full resources for template character %s.", player->GetGUID().ToString());
                     }
                     return;
